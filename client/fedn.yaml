@@ -1,0 +1,11 @@
+entry_points:
+  train:
+    command: python train.py
+  validate:
+    command: python validate.py
+  build:
+    command: python model.py
+  startup:
+    command: echo "Preparing data files. Please check CSV files are in place."
+
+python_env: python_env.yaml
